@@ -25,6 +25,9 @@ This repository is the starter code for the project: Students will fork and clon
 ## Dependencies for testing purposes
 -nodemon
 
+## Issues
+Issues with timeago api have prevented me from using the timeago function. Instead I used "Math.round((Date.now() - tweetObj.created_at)/86400000)+ ' Days ago'", which returns the same value as the timeago() function.
+
 ## Screenshots
 
 #### Desktop tweeter setup
