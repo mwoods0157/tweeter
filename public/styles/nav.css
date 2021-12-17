@@ -1,9 +1,11 @@
 nav {
+    display: flex;
     height: 120px;
     width: 100%;
     background-color: #4056A1;
     position: fixed;
     z-index: 10;
+    justify-content: space-between;
 }
 
 nav > span {
@@ -11,20 +13,27 @@ nav > span {
     color: #FFFFFF;
 }
 
-.left {
-    float: right;
-    margin-right: 50px;
+#main-heading {
+    vertical-align: center;
+    margin-top: 37px;
+    font-size: 40px;
 }
+
+.right span {
+    font-family: "Bungee", sans-serif;
+    color: #FFFFFF;
+}
+
 
 span {
     display: inline-block;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 #topHeader {
     display: flex;
     top: 50px;
-    background-color: #fd7e14;
+    background-color: #3b7eeb;
     height: 400px;
     width: 100%;
     align-items: center;
@@ -40,10 +49,15 @@ header h2 {
 }
 
 nav i {
-    color: white;
-    margin-right: 200px;
-    margin-top: 70px;
+    color: red;
+    margin-right: 0px;
+    margin-top: 50px;
 }
+
+.little-text b {
+    font-size: 40px;
+}
+
 
 
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/responsive-layout.css" type="text/css"/>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -36,16 +37,19 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
-      <span class="left">Write a new tweet</span>
-      <i class="fas fa-angle-double-down left"></i>
+      <span id="main-heading">tweeter</span>
+      <div class="right">
+      <i class="fas fa-angle-double-down"></i>
+      <span class="little-text"><b>Write</b> a new tweet</span>
+      
+      </div>
     </nav>
     
     <header id="topHeader">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
+      
       <div>
           <h2>Matthew Woods</h2>
       </div>

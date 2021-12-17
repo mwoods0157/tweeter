@@ -1,0 +1,31 @@
+@media (min-width: 1024px) {
+   #topHeader {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    background-color: #f59042;
+    width: 40%;
+    bottom: 50px;
+    left: 50px;
+    height: 50%;
+    border-radius: 150px;
+   }
+
+   .container {
+    float: right;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+   }
+
+   .error-tweets {
+       
+       height: 90px;
+   }
+
+
+}
+
+
+
+

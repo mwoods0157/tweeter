@@ -75,14 +75,18 @@ $(document).ready(function() {
         //console.log("form submitted");
         let value = $(this).children("#tweet-text").val();
         console.log(value);
+        console.log(typeof value);
         if (value === null || value === "") {
             $('.counter').text(140);
             $(this).siblings(".error-tweets").children("#error-char").css("display", "none");
             $(this).siblings(".error-tweets").css("display", "block");
+            $(this).siblings(".error-tweets").children("#error-empty").css("display", "block");
+            return;
             //return alert("Tweet area is empty. Please write something first.");
         } else if ($(this).children("#tweet-text").val().length > 140) {
             $(this).siblings(".error-tweets").children("#error-empty").css("display", "none");
             $(this).siblings(".error-tweets").css("display", "block");
+            $(this).siblings(".error-tweets").children("#error-char").css("display", "block");
             $(this).children("#tweet-text").val("");
             $(".counter").text(140).css("color", "#545149");
             return;
