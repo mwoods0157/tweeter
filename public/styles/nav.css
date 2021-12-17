@@ -1,0 +1,57 @@
+nav {
+    height: 120px;
+    width: 100%;
+    background-color: #4056A1;
+    position: fixed;
+    z-index: 10;
+}
+
+nav > span {
+    font-family: "Bungee", sans-serif;
+    color: #FFFFFF;
+}
+
+.left {
+    float: right;
+    margin-right: 50px;
+}
+
+span {
+    display: inline-block;
+    margin: 1.5em;
+}
+
+#topHeader {
+    display: flex;
+    top: 50px;
+    background-color: #fd7e14;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/dark-exa.png);
+    z-index: 1;
+    position: relative;
+    top: 120px;
+}
+
+header h2 {
+    color: #FFFFFF;
+}
+
+nav i {
+    color: white;
+    margin-right: 200px;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+

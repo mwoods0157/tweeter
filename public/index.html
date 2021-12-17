@@ -9,21 +9,82 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- Adding the Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Testing whether Timeago is loading properly -->
+    <script>
+      var loaded = false;
+    </script>
+    
+    <!-- Timeago -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer" onload="loaded=true";></script>
+    
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <span class="left">Write a new tweet</span>
+      <i class="fas fa-angle-double-down left"></i>
     </nav>
-
+    
+    <header id="topHeader">
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Matthew Woods</h2>
+      </div>
+  </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <div class="error-tweets">
+          <p id="error-char">Tweets can not be longer than 140 characters. Sorry.</p>
+          <p id="error-empty">Tweet area is empty. Please write something first.</p>
+        </div>
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/" id="toptweet">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">TWEET</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+        <div id="bottom-post">
+        <article>
+          <header class="tweetHeader" >
+            <img src="https://i.imgur.com/73hZDYK.png" align="top">
+            <p>Matthew Woods</p>
+            <p id="rightEmail">@MWoods</p>
+          </header>
+          <footer>
+            <p class="tweetContainer">Hello World!</p>
+            <p class="tweetTime">10 days ago</p>
+            <i class="fas fa-flag imageFloatRight"></i>
+            <i class="fas fa-exchange-alt imageFloatRight"></i>
+            <i class="fas fa-heart imageFloatRight"></i>
+          </footer>
+        </article>
+      </div>
+     
+      </section>
+    </main>
+
   </body>
 </html>

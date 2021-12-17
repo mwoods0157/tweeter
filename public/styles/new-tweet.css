@@ -1,0 +1,98 @@
+button {
+    background-color: #4056A1;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+textarea {
+    width: 100%;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid black;
+    resize: none;
+    background-color: #f4f1ec;
+}
+
+output {
+    float: right;
+    font-family: "Bungee", sans-serif;
+}
+
+article {
+    margin: 20px 10px; 
+    border: 5px solid #666666;
+    background-color: #f4f1ec;
+}
+
+article:hover {
+    box-shadow: 5px 10px;
+}
+
+.tweetHeader {
+    font-family: "Source+Sans+Pro", sans-serif;
+}
+
+.tweetHeader p {
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+img {
+    margin: 15px 10px;
+}
+
+#rightEmail {
+    float: right;
+    color: grey;
+}
+
+.tweetContainer {
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+    padding: 20px;
+}
+
+.tweetTime {
+    margin: 10px 10px 10px 30px;
+    font-size: 0.75em;
+}
+
+.imageFloatRight {
+    float: right;
+}
+
+footer .tweetTime {
+    display: inline-block;
+}
+
+footer .imageFloatRight {
+    display: inline-block;
+    margin: 5px 30px 5px 10px;
+    color: #003366; 
+}
+
+.imageFloatRight:hover {
+    color: #ffd700;
+}
+
+.error-tweets {
+    display: none;
+    border: 2px solid #bf0000;
+    background-color: #ff4e50;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.error-tweets:hover {
+    box-shadow: 5px 10px;
+}
+
+.error-tweets p {
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+}
+
+
+
