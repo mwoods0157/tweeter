@@ -25,9 +25,9 @@ This repository is the starter code for the project: Students will fork and clon
 ## Dependencies for testing purposes
 -nodemon
 
-##Screenshots
+## Screenshots
 
-####Desktop tweeter setup
+#### Desktop tweeter setup
 
-!["Desktop tweeter setup"](<img width="1440" alt="Screen Shot 2021-12-17 at 4 24 31 PM" src="https://user-images.githubusercontent.com/38844101/146611030-200f333d-4f99-45cf-a872-12ceaa1883b2.png">)
+!["Desktop tweeter setup"]<img width="1440" alt="Screen Shot 2021-12-17 at 4 24 31 PM" src="https://user-images.githubusercontent.com/38844101/146611030-200f333d-4f99-45cf-a872-12ceaa1883b2.png">
 
