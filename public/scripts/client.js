@@ -3,6 +3,7 @@ $(document).ready(function() {
     $("#toptweet").submit(function(event) {
         event.preventDefault();
         let value = $(this).children("#tweet-text").val();
+        $(this).siblings(".error-tweets").css("display", "none"); //Moved from right before the ajax statement
         if (value === null || value === "") {
             $('.counter').text(140);
             $(this).siblings(".error-tweets").children("#error-char").css("display", "none");
@@ -17,17 +18,16 @@ $(document).ready(function() {
             $(".counter").text(140).css("color", "#545149");
             return;
         }
-        $(this).siblings(".error-tweets").css("display", "none");
         $.ajax({
             url: "/tweets/",
             type: "POST",
             data: $(this).serialize(),
             success: function(data) {
                 console.log('success!');
-                loadTweets(data);
+                loadTweets(data); 
             }
         })
-        
+        $(this).children("#tweet-text").val("");
     })
     const createTweetElement = function(tweetObj) {
         const $tweet = $(`
@@ -62,6 +62,9 @@ $(document).ready(function() {
             url: "/tweets/",
             type: "GET",
         }).done(function($tweet) {
+            $tweet.sort((a, b) => {
+                return a.created_at - b.created_at;
+            });
             renderTweets($tweet);
             console.log("tweets loaded to page");
         });
