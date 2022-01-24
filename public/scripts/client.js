@@ -51,6 +51,7 @@ $(document).ready(function() {
 
 
     const renderTweets = function(tweetArr) {
+        $('#bottom-post').empty();
         for (let tweet of tweetArr) {
             const tweetElem = createTweetElement(tweet);
             $("#bottom-post").prepend(tweetElem); 

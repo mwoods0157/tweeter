@@ -1,11 +1,8 @@
 $(document).ready(function() {
     // --- our code goes here ---
-    //console.log('Hey, Ive loaded');
-    $("#tweet-text").keydown(function() { //keypress
-        //console.log(this);
+    $("#tweet-text").on('input', function() { 
         let maxLength = 140;
         let tweetLength = $(this).val().length;
-        //console.log(totalValue);
         
         $(this).siblings("div").children(".counter").html(maxLength - tweetLength);
         if (maxLength - tweetLength < 0) {
